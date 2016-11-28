@@ -3,15 +3,54 @@
 <head>
   <meta charset="utf-8">
   
-  <title>new blog | Hexo</title>
+  <title>移动端rem适配方法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="new blog">
-<meta property="og:url" content="http://yoursite.com/2016/11/06/new-blog/index.html">
+  <meta name="description" content="移动端rem适配公式目标设备宽度/设计稿宽度 * 参照px（比如100px或者10px) = 实际font-size PX
+参照px是你先以一种设备的分辨率搞好整个设计稿比例的参照px例如iphone5，我以10px为参照，css里写
+
+html{
+    font-size:10px;
+}
+.haha{
+    font-size: 1rem
+}
+
+
+html里写body{    哈哈}
+iph">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端rem适配方法">
+<meta property="og:url" content="http://yoursite.com/2016/11/28/移动端rem适配方法/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:updated_time" content="2016-11-06T14:19:36.088Z">
+<meta property="og:description" content="移动端rem适配公式目标设备宽度/设计稿宽度 * 参照px（比如100px或者10px) = 实际font-size PX
+参照px是你先以一种设备的分辨率搞好整个设计稿比例的参照px例如iphone5，我以10px为参照，css里写
+
+html{
+    font-size:10px;
+}
+.haha{
+    font-size: 1rem
+}
+
+
+html里写body{    哈哈}
+iph">
+<meta property="og:updated_time" content="2016-11-28T06:53:18.647Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="new blog">
+<meta name="twitter:title" content="移动端rem适配方法">
+<meta name="twitter:description" content="移动端rem适配公式目标设备宽度/设计稿宽度 * 参照px（比如100px或者10px) = 实际font-size PX
+参照px是你先以一种设备的分辨率搞好整个设计稿比例的参照px例如iphone5，我以10px为参照，css里写
+
+html{
+    font-size:10px;
+}
+.haha{
+    font-size: 1rem
+}
+
+
+html里写body{    哈哈}
+iph">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,16 +99,12 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-new-blog" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-移动端rem适配方法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/11/06/new-blog/" class="article-date">
-  <time datetime="2016-11-06T14:16:57.000Z" itemprop="datePublished">2016-11-06</time>
+    <a href="/2016/11/28/移动端rem适配方法/" class="article-date">
+  <time datetime="2016-11-28T06:39:26.000Z" itemprop="datePublished">2016-11-28</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/start/">start</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -78,7 +113,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      new blog
+      移动端rem适配方法
     </h1>
   
 
@@ -86,14 +121,37 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>移动端rem适配公式<br>目标设备宽度/设计稿宽度 * 参照px（比如100px或者10px) = 实际font-size PX</p>
+<p>参照px是你先以一种设备的分辨率搞好整个设计稿比例的参照px<br>例如iphone5，我以10px为参照，<br>css里写</p>
+<style type="text/css">
+html{
+    font-size:10px;
+}
+.haha{
+    font-size: 1rem
+}
+</style>
+
+<p>html里写<br>body{<br>    <div class="haha">哈哈</div><br>}</p>
+<p>iphone6这样<br>css里写</p>
+<style type="text/css">
+html{
+    font-size:11.71875px; (套公式:iphone6宽度/iphone5宽度*10px)
+}
+.haha{
+    font-size: 1rem
+}
+</style>
+
+<p>html里写<br>body{<br>    <div class="haha">哈哈</div><br>}</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/06/new-blog/" data-id="ciw1pzgk700025ctrpn6tckmp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/28/移动端rem适配方法/" data-id="ciw1pzgjr00015ctrio3sd4vr" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
 
     </footer>
   </div>
@@ -101,19 +159,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/11/28/移动端rem适配方法/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          移动端rem适配方法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/11/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/11/06/new-blog/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">new blog</div>
     </a>
   
 </nav>

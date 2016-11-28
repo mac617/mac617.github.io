@@ -61,6 +61,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-移动端rem适配方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/28/移动端rem适配方法/" class="article-date">
+  <time datetime="2016-11-28T06:39:26.000Z" itemprop="datePublished">2016-11-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/28/移动端rem适配方法/">移动端rem适配方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>移动端rem适配公式<br>目标设备宽度/设计稿宽度 * 参照px（比如100px或者10px) = 实际font-size PX</p>
+<p>参照px是你先以一种设备的分辨率搞好整个设计稿比例的参照px<br>例如iphone5，我以10px为参照，<br>css里写</p>
+<style type="text/css">
+html{
+    font-size:10px;
+}
+.haha{
+    font-size: 1rem
+}
+</style>
+
+<p>html里写<br>body{<br>    <div class="haha">哈哈</div><br>}</p>
+<p>iphone6这样<br>css里写</p>
+<style type="text/css">
+html{
+    font-size:11.71875px; (套公式:iphone6宽度/iphone5宽度*10px)
+}
+.haha{
+    font-size: 1rem
+}
+</style>
+
+<p>html里写<br>body{<br>    <div class="haha">哈哈</div><br>}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/28/移动端rem适配方法/" data-id="ciw1pzgjr00015ctrio3sd4vr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-new-blog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/11/06/new-blog/" class="article-date">
@@ -91,7 +152,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/06/new-blog/" data-id="civ6qdfeo0000k4trtom4t6le" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/06/new-blog/" data-id="ciw1pzgk700025ctrpn6tckmp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -138,7 +199,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/06/hello-world/" data-id="civ6qdff40001k4tr7o8ru8gu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/06/hello-world/" data-id="ciw1pzgiq00005ctry1f624tt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -167,7 +228,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
     </div>
   </div>
 
@@ -177,7 +238,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+      <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/移动端/" style="font-size: 10px;">移动端</a>
     </div>
   </div>
 
@@ -197,6 +258,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/11/28/移动端rem适配方法/">移动端rem适配方法</a>
+          </li>
         
           <li>
             <a href="/2016/11/06/new-blog/">new blog</a>
