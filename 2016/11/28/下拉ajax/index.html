@@ -3,14 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>移动端rem适配方法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="vue使用下拉ajax
+1234567891011121314151617&amp;lt;style type=&quot;text/css&quot;&amp;gt;.availHeight&amp;#123;	position: fixed;	top: 0;	right: 0;&amp;#125;.scrollTop&amp;#123;	position: fixed;	top: 100px;	right: 0;&amp;#125;.scrollHeight&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端rem适配方法">
+<meta property="og:url" content="http://yoursite.com/2016/11/28/下拉ajax/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="vue使用下拉ajax
+1234567891011121314151617&amp;lt;style type=&quot;text/css&quot;&amp;gt;.availHeight&amp;#123;	position: fixed;	top: 0;	right: 0;&amp;#125;.scrollTop&amp;#123;	position: fixed;	top: 100px;	right: 0;&amp;#125;.scrollHeight&amp;">
+<meta property="og:updated_time" content="2016-12-14T07:24:39.518Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="移动端rem适配方法">
+<meta name="twitter:description" content="vue使用下拉ajax
+1234567891011121314151617&amp;lt;style type=&quot;text/css&quot;&amp;gt;.availHeight&amp;#123;	position: fixed;	top: 0;	right: 0;&amp;#125;.scrollTop&amp;#123;	position: fixed;	top: 100px;	right: 0;&amp;#125;.scrollHeight&amp;">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,51 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-移动端rem适配方法" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/28/移动端rem适配方法/" class="article-date">
-  <time datetime="2016-11-28T06:39:26.000Z" itemprop="datePublished">2016-11-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/28/移动端rem适配方法/">移动端rem适配方法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>移动端rem适配公式<br>目标设备宽度/设计稿宽度 * 参照px（比如100px或者10px) = 实际font-size PX</p>
-<p>参照px是你先以一种设备的分辨率搞好整个设计稿比例的参照px<br>例如iphone5，我以10px为参照，<br>css里写<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;style type="text/css"&gt;</div><div class="line">html&#123;</div><div class="line">	font-size:10px;</div><div class="line">&#125;</div><div class="line">.haha&#123;</div><div class="line">	font-size: 1rem</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
-<h2 id="iphone6这样"><a href="#iphone6这样" class="headerlink" title="iphone6这样"></a>iphone6这样</h2><p>css里写<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;style type="text/css"&gt;</div><div class="line">html&#123;</div><div class="line">	font-size:11.71875px; (套公式:iphone6宽度/iphone5宽度*10px)</div><div class="line">&#125;</div><div class="line">.haha&#123;</div><div class="line">	font-size: 1rem</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
-<p>JS适配各种设备公式<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> clientWidth = <span class="built_in">document</span>.documentElement.clientWidth</div><div class="line">   documentElement.fontSize = clientWidth/<span class="number">320</span>*<span class="number">10</span> + <span class="string">"px"</span></div><div class="line">   &lt;!-- clientWidth是目标设备宽度 --&gt;</div><div class="line">   &lt;!-- 320是设计稿的宽度 --&gt;</div><div class="line">   &lt;!-- 10是参照px --&gt;</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/28/移动端rem适配方法/" data-id="ciw1pzgjr00015ctrio3sd4vr" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-下拉ajax" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-下拉ajax" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/11/28/下拉ajax/" class="article-date">
   <time datetime="2016-11-28T06:39:26.000Z" itemprop="datePublished">2016-11-28</time>
@@ -116,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/28/下拉ajax/">移动端rem适配方法</a>
+    <h1 class="article-title" itemprop="name">
+      移动端rem适配方法
     </h1>
   
 
@@ -140,97 +103,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-new-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/06/new-blog/" class="article-date">
-  <time datetime="2016-11-06T14:16:57.000Z" itemprop="datePublished">2016-11-06</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/start/">start</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2016/11/28/移动端rem适配方法/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/06/new-blog/">new blog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+          移动端rem适配方法
         
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/06/new-blog/" data-id="ciw1pzgk700025ctrpn6tckmp" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/06/new-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">new blog</div>
+    </a>
+  
+</nav>
 
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/06/hello-world/" class="article-date">
-  <time datetime="2016-11-06T13:40:33.607Z" itemprop="datePublished">2016-11-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/06/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/06/hello-world/" data-id="ciw1pzgiq00005ctry1f624tt" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
